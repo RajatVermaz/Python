@@ -11,6 +11,8 @@ if __name__ == "__main__": #  is used to execute some code only if the file was 
     if n%2 == 0 and 2<=n<=5: # If n is even and in the inclusive range of 2 to 5, print Not Weird
         print("Not Weird")  
     elif n%2 == 0 and 6<=n<=20: # If n is even and in the inclusive range of 6 to 20, print Weird
+        # The elif statement allows you to check multiple expressions for TRUE 
+        # and execute a block of code as soon as one of the conditions evaluates to TRUE.
         print("Weird")
     elif n%2 == 0 and n>20: # If n is even and greater than 20, print Not Weird
         print("Not Weird")
