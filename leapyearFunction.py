@@ -44,6 +44,18 @@ def leapYear(year):
     else:
         print(f"Year {year} is not a leap year.")
 
+def HackerLogicLeap(year):
+    leap = False
+    if year % 4 == 0 and year % 100 != 0:
+        leap = True
+    elif year % 100 == 0 and year % 400 != 0:
+        leap = False
+    elif year % 400 == 0:
+        leap = True
+    elif year % 4 != 0:
+        leap = False
+    return leap
+
 
 if __name__ == "__main__":
 
@@ -55,4 +67,5 @@ if __name__ == "__main__":
     print('Approach Bool 1 :)')
     leapYearBoolean(year)
     print('**************************\n')
-    
+    print('Hacker Rank Solution: ')
+    print(HackerLogicLeap(year))
