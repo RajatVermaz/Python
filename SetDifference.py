@@ -1,3 +1,4 @@
+
 # Students of District College have a subscription to English and French newspapers. Some students have subscribed to only the English newspaper, some have subscribed to only the French newspaper, and some have subscribed to both newspapers.
 
 # You are given two sets of student roll numbers. One set has subscribed to the English newspaper, and one set has subscribed to the French newspaper. Your task is to find the total number of students who have subscribed to only English newspapers.
@@ -13,7 +14,7 @@ num= int(input("Enter number of students subscribed to English paper: "))
 english = set(map(int,input("Enter RollNo of all the students subscribed to English paper: (space-saperated)").split()))
 num2 = int(input("Enter number of students subscribed to English paper: "))
 french = set(map(int,input("Enter RollNo of all the students subscribed to French paper: (space-saperated)").split()))
-setdiff = english.difference(french)
-print(f"Only English reader {len(setdiff)}")
+
+print(f"Only English reader {len(english-french)}")
 
     
