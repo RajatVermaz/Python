@@ -11,9 +11,9 @@
 # The fourth line contains the space separated list of student roll numbers who have subscribed to the French newspaper.
 num= int(input("Enter number of students subscribed to English paper: "))
 
-english = set(map(int,input("Enter RollNo of all the students subscribed to English paper: (space-saperated)").split()))
+english = set(map(int,input("Enter RollNo of all the students subscribed to English paper: (space-saperated) ").split()))
 num2 = int(input("Enter number of students subscribed to English paper: "))
-french = set(map(int,input("Enter RollNo of all the students subscribed to French paper: (space-saperated)").split()))
+french = set(map(int,input("Enter RollNo of all the students subscribed to French paper: (space-saperated) ").split()))
 
 print(f"Only English reader {len(english-french)}")
 
